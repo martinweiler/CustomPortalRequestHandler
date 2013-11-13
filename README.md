@@ -14,12 +14,12 @@ Installation instructions
 
 1. Copy target/portal-request-handler-<VERSION>.jar to $JPP_HOME/modules/system/layers/gatein/org/gatein/lib/main
 
-2. Edit $JPP_HOME/modules/system/layers/gatein/org/gatein/lib/main/module.xml, and add the following to the <resources> element:
-   
+2. Edit $JPP_HOME/modules/system/layers/gatein/org/gatein/lib/main/module.xml, and add the following to the `<resources>` element:
+```   
    <resource-root path="portal-request-handler-<VERSION>.jar"/>
-   
+ ```  
 3. Edit $JPP_HOME/gatein/gatein.ear/portal.war/WEB-INF/conf/portal/controller-configuration, and apply the following change:   
-
+```
     <component-plugin>
       <name>PortalRequestHandler</name>
       <set-method>register</set-method>
@@ -27,11 +27,12 @@ Installation instructions
       <type>org.exoplatform.portal.application.PortalRequestHandler</type>
       -->
       <type>org.exoplatform.portal.application.CustomPortalRequestHandler</type>
-
+```
 4. Add the following to JPP_HOME/gatein/gatein.ear/portal.war/web.xml to display a custom error page:
-
+```
     <error-page>
       <error-code>404</error-code>
       <location>/error/jsp/file_not_found.jsp</location>
     </error-page>
+```
 
