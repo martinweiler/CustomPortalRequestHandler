@@ -28,4 +28,10 @@ Installation instructions
       -->
       <type>org.exoplatform.portal.application.CustomPortalRequestHandler</type>
 
+4. Add the following to JPP_HOME/gatein/gatein.ear/portal.war/web.xml to display a custom error page:
+
+    <error-page>
+      <error-code>404</error-code>
+      <location>/error/jsp/file_not_found.jsp</location>
+    </error-page>
 
