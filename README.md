@@ -17,7 +17,7 @@ Installation instructions
 
 2. Edit *$JPP_HOME/modules/system/layers/gatein/org/gatein/lib/main/module.xml*, and add the following to the `<resources>` element:
 
-```   
+```xml   
     <resource-root path="portal-request-handler-<VERSION>.jar"/>
 ```
 
