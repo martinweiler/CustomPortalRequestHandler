@@ -15,9 +15,9 @@ Installation instructions
 1. Copy target/portal-request-handler-<VERSION>.jar to $JPP_HOME/modules/system/layers/gatein/org/gatein/lib/main
 
 2. Edit $JPP_HOME/modules/system/layers/gatein/org/gatein/lib/main/module.xml, and add the following to the `<resources>` element:
-  
+ <pre> 
    <resource-root path="portal-request-handler-<VERSION>.jar"/>
-  
+ </pre> 
 3. Edit $JPP_HOME/gatein/gatein.ear/portal.war/WEB-INF/conf/portal/controller-configuration, and apply the following change:   
 
     <component-plugin>
